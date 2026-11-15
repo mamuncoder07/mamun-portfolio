@@ -1,4 +1,16 @@
 
+# Mamun Reja | AI/ML Engineer & Data Scientist
+
+<p align="center">
+  <a href="https://mamun-portfolio-seven.vercel.app">
+    <img src="https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Website-8B5CF6?style=for-the-badge" alt="Live Portfolio"/>
+  </a>
+</p>
+
+**🚀 Explore my live portfolio:** https://mamun-portfolio-seven.vercel.app
+
+---
+
 # Mamun Reja Portfolio
 
 A server-rendered Next.js portfolio with an interactive Three.js/R3F research orb, public GitHub activity panel, keyboard-accessible portfolio terminal, deterministic Mamun AI helper, and responsive sections.
