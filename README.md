@@ -1,6 +1,7 @@
-# Mamun Reja portfolio
 
-A server-rendered Next.js portfolio with an interactive Three.js/R3F research-orb, public GitHub activity panel, keyboard-accessible portfolio terminal, deterministic Mamun AI helper, and responsive sections.
+# Mamun Reja Portfolio
+
+A server-rendered Next.js portfolio with an interactive Three.js/R3F research orb, public GitHub activity panel, keyboard-accessible portfolio terminal, deterministic Mamun AI helper, and responsive sections.
 
 ## Run locally
 
