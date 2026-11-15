@@ -1,0 +1,39 @@
+{
+  "name": "mamun-reja-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 3000",
+    "build": "next build && node -e \"const fs=require('fs'); const path=require('path'); const ensure=(dir)=>fs.mkdirSync(dir,{recursive:true}); const copyContents=(src,dest)=>{ensure(dest); for (const entry of fs.readdirSync(src,{withFileTypes:true})) { const srcPath=path.join(src, entry.name); const destPath=path.join(dest, entry.name); if (entry.isDirectory()) { fs.cpSync(srcPath, destPath, { recursive: true }); } else { fs.copyFileSync(srcPath, destPath); } } }; ensure('.next/standalone/public'); ensure('.next/standalone/.next/static'); copyContents('public', '.next/standalone/public'); copyContents('.next/static', '.next/standalone/.next/static');\"",
+    "start": "node .next/standalone/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bible-strong/avatar-core": "1.0.1",
+    "@bible-strong/avatar-react": "1.0.1",
+    "@fontsource-variable/fredoka": "^5.3.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/nunito": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@react-three/fiber": "^9.8.2",
+    "framer-motion": "^14.10.1",
+    "lucide-react": "^1.70.0",
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.187.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^7.0.2"
+  }
+}
